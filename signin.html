@@ -20,7 +20,7 @@
         <!-- SIGN UP FORM -->
         <div class="form-container sign-up-container">
 
-            <form id="signupForm">
+            <form id="signupForm" action="signup.php" method="POST">
 
                 <h1>Create Account</h1>
 
@@ -36,6 +36,7 @@
                     type="text"
                     placeholder="Name"
                     id="signupName"
+                    name="name"
                     required
                 >
 
@@ -43,6 +44,7 @@
                     type="email"
                     placeholder="Email"
                     id="signupEmail"
+                    name="email"
                     required
                 >
 
@@ -50,6 +52,7 @@
                     type="password"
                     placeholder="Password"
                     id="signupPassword"
+                    name="password"
                     required
                 >
 
@@ -63,7 +66,7 @@
         <!-- SIGN IN FORM -->
         <div class="form-container sign-in-container">
 
-            <form id="signinForm">
+            <form id="signinForm" action="login.php" method="POST">
 
                 <h1>Sign in</h1>
 
@@ -79,6 +82,7 @@
                     type="email"
                     placeholder="Email"
                     id="signinEmail"
+                    name="email"
                     required
                 >
 
@@ -86,6 +90,7 @@
                     type="password"
                     placeholder="Password"
                     id="signinPassword"
+                    name="password"
                     required
                 >
 
@@ -118,7 +123,7 @@
                         please login with your personal details.
                     </p>
 
-                    <button class="ghost" id="signIn">
+                    <button type="button" class="ghost" id="signIn">
                         SIGN IN
                     </button>
 
@@ -135,7 +140,7 @@
                         your journey with us.
                     </p>
 
-                    <button class="ghost" id="signUp">
+                    <button type="button" class="ghost" id="signUp">
                         SIGN UP
                     </button>
 
